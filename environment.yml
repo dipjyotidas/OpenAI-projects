@@ -1,0 +1,4 @@
+name: openai
+channels:
+  - defaults
+prefix: C:\Users\Dipjyoti\.conda\envs\openai

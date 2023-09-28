@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "C:\\Users\\Dipjyoti\\PycharmProjects"
+		}
+	],
+	"settings": {
+		"python.pythonPath": "${workspaceFolder}\\venv\\Scripts\\python.exe"
+	}
+}
