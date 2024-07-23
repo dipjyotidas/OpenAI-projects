@@ -6,10 +6,15 @@ import os
 openai.api_key = os.environ.get('OpenAI_API_Key')
 
 # Create a request to the Completion endpoint
-response = openai.Completion.create(
-  model="gpt-3.5-turbo-instruct",
-  prompt = "Generate a catchy slogan for fine dining French restaurant",
-  max_tokens = 100
+response = openai.chat.completions.create(
+  model="gpt-3.5-turbo",
+  messages =[
+      {"role":"user",
+       "content":"Generate a catchy slogan for fine dining continental restuarant"}
+  ],
+  max_tokens = 200
 )
 
-print(response["choices"][0]["text"])
+print(response.choices[0].message.content)
+
+#response:"Savor the Taste of Elegance at Our Continental Paradise!"
